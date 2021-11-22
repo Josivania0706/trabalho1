@@ -1,0 +1,357 @@
+.header{
+ position: fixed ;
+  background: rgb(255, 148, 116);
+  width: 100%;
+  height: 130px;
+  top: 0%;
+  left: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+.cabecalhoIMG{
+    
+    margin-left: 10%;
+   
+    background-position: left; 
+}
+.cabecalhoopcoes{
+    position: absolute;
+    width: 270px;
+    bottom: 15px;
+    right: 0%;
+}
+.cabecalhoOpcoesEspaco{
+    color: black;
+    margin-right: 6%;
+    text-decoration:none;
+}
+
+.alinharCarrossel{
+    display: block;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    min-height: 100vh;
+}
+
+.carrossel{
+    
+    box-shadow:2px 2px 4px rgb(170, 68, 68);
+    overflow: hidden;
+    height: 50%;
+    width: 85%;
+}
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#imagem{
+    object-fit: cover;
+    height: 50%;
+    width: 1000%;
+
+}
+.centralizar{
+text-align: center;
+}
+
+.bodydiv{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #96224f 30%, #962 70%);
+}
+
+.mySlides{
+    position:static;
+    border-radius: 8px;
+    margin-top: 10%;
+    margin-left:15%;
+    width: 70%;
+    height: 350px;
+    
+}
+.carousel-item{
+    align-items: center;
+}
+.icone{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 30px;
+}
+
+
+
+
+.nav2{
+    margin-top: 2%;
+   
+    height: 1000px;
+    background: linear-gradient(72deg,  rgb(219, 126, 98) 30%,  rgb(255, 148, 116) 70%);
+}
+
+.Titulo{
+    padding-top: 2px;
+    font: italic smaller sans-serif;
+    font-size:20px; 
+    text-align: center;
+
+}
+
+
+button {
+    display: inline-block;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    vertical-align:auto;
+    width: 300px;
+    border-radius: 5%;
+}
+.texto{
+    margin-top: 15%;
+    font-size: 20px;
+
+}
+
+figcaption {
+   
+    color:rgb(34, 33, 33);
+    font: italic smaller sans-serif;
+    font-size:15px;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+    
+    
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: 60% 60% 60%;
+    grid-template-rows: 60% 60% 60% ;
+    height: calc(100vh - 20px);
+    grid-gap:30px;
+    margin: 0 auto;
+
+  }
+  
+
+.galery{
+   
+    height:500px;
+    border: 20px;
+    overflow:visible;
+    
+}
+
+.galery .produtos{
+   
+    animation-name: animação;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.galery.produtos img{
+  
+    
+}
+
+.pagamento{
+    font-family: "Helveltica", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    background: rgb(255, 148, 116);; 
+}
+
+.pagamento h3{
+	padding-top: 25px;
+}
+
+.pagamento .Boleto{
+	padding-top: 25px;
+	padding-right: 35px;
+	padding-bottom: 25px;
+}
+
+.pagamento .Cartão{
+	padding-left: 35px;
+	padding-top: 25px;
+	padding-right: 35px;
+	padding-bottom: 25px;
+}
+
+.pagamento .PIX{
+	padding-left: 35px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.global{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.global .empresa{
+    font-family: "Helveltica", sans-serif;
+    font-size: 15px;
+}
+
+.global .cliente{
+    font-family: "Helveltica", sans-serif;
+    font-size: 15px;  
+}
+
+.global .cliente .titulo{
+    font-family: "Helveltica", sans-serif;
+    font-size: 15px;  
+}
+
+.nomeEmpresa{
+    font-family: "Helveltica", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    background: rgb(255, 148, 116);;  
+}
+
+.nomeEmpresa h3{
+	padding-top: 15px;
+	padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+input, textarea{
+	font-family: "Helveltica", sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+input:hover, textarea:hover{
+	background-color: #dddddd;
+}
+
+legend{
+	color: #888888;
+	font-weight: normal;
+	font-family: "Helveltica", sans-serif;
+	font-size: 14px;
+}
+
+fieldset{
+	border-color: #cecece;
+	margin: 20px;
+}
+
+.erro{
+	border: 2px solid red;
+}
+
+@media (max-width: 1300px ){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        grid-template-rows: 60% 60% 60%;
+        grid-template-rows: 60% 60% 60%;
+        height: calc(100vh - 20px);
+        grid-gap:30px;
+        margin: 0 auto;
+   
+        
+    }
+}
+@media (max-width: 1300px ){
+    .nav2{
+        margin-top: 2%;  
+        height: 1400px;
+        background: linear-gradient(72deg,  rgb(219, 126, 98) 30%,  rgb(255, 148, 116) 70%);
+        
+    }
+}
+
+@media (max-width: 850px ){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 60% 60%;
+        grid-template-rows: 60% 60% ;
+        height: calc(100vh - 20px);
+        grid-gap:10px;
+        margin: 0 auto;
+   
+        
+    }
+}
+@media (max-width:  850px ){
+    .nav2{
+        margin-top: 2%;  
+        height: 1800px;
+        background: linear-gradient(72deg,  rgb(219, 126, 98) 30%,  rgb(255, 148, 116) 70%);
+        
+    }
+}
+
+@media (max-width: 550px ){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 60% ;
+        grid-template-rows: 60%;
+        height: calc(100vh - 20px);
+        grid-gap:30px;
+        margin: 0 auto;
+        
+   
+        
+    }
+}
+@media (max-width: 550px ){
+    .nav2{
+        margin-top: 2%;  
+        height: 3750px;
+        background: linear-gradient(72deg,  rgb(219, 126, 98) 30%,  rgb(255, 148, 116) 70%);
+        
+    }
+}
+
+
+@media (max-width: 1200px ){
+    .mySlides{
+    margin-top: 15%;
+    margin-left:15%;
+    width: 70%;
+    height: 350px;
+        
+    }
+}
+@media (max-width: 750px ){
+    .mySlides{
+    margin-top: 20%;
+    margin-left:15%;
+    width: 70%;
+    height: 250px;
+        
+    }
+}
+@media (max-width: 500px ){
+    .mySlides{
+    margin-top: 30%;
+    margin-left:15%;
+    width: 70%;
+    height: 150px;
+        
+    }
+}
+
+

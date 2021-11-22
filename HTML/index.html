@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>JRLanches</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <script src="../javaScripts/script.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="../IMG/png_20211113_155356_0000.png" class="cabecalhoIMG" alt="JRLanches" width="130" height="130"/> 
+            <span class="cabecalhoopcoes">
+                <a href="index.html"  class="cabecalhoOpcoesEspaco">Início</a>
+                <a href="" class="cabecalhoOpcoesEspaco">Produtos</a>
+                <a href="#contato" class="cabecalhoOpcoesEspaco">Contato</a>
+                <a href="" class="cabecalhoOpcoesEspaco">Entrar</a>
+            </span>
+            
+        </div>
+    </header>
+
+    <nav>
+        <div class="centralizar">
+            <div>
+                <img class="mySlides" src="../IMG/IM2.png" >
+                <img class="mySlides" src="../IMG/img1.jpg">
+                <img class="mySlides" src="../IMG/img3.jpg">            
+            </div>
+        </div>
+    </nav>
+
+    <nav class="nav2"> 
+        <div class="Titulo">
+            <h5>PRODUTOS<hr></h5>
+        </div>
+
+        <div class="galery">
+            <div class="produtos">
+                <div class="wrapper">
+                    <figure>
+                        <button id="close-image"><img src="../IMG/X-burguer.jpeg" alt="foto1" width="250" height="250"> 
+                        <figcaption class="texto">X-burguer</figcaption></button>
+                    </figure>
+                    <figure>
+                        <button id="close-image"><img src="../IMG/X-egg.png" alt="foto2" width="250" height="250">    
+                         <figcaption class="texto">X-eggs</figcaption></button>
+                    </figure>
+                    <figure>
+                        <button id="close-image"><img src="../IMG/x-frango.jpg" alt="foto3" width="250" height="250">
+                        </a><figcaption class="texto">X-frango</figcaption></button>
+                    </figure>
+                    <figure>
+                        <button id="close-image"><img src="../IMG/x-tudo.jpeg" alt="foto4" width="250" height="250"> 
+                        <figcaption class="texto">X-tudo</figcaption></button>
+                    </figure>
+                    <figure>
+                        <button id="close-image"><img src="../IMG/batatinha.jpeg" alt="foto5" width="250" height="250"> 
+                        <figcaption class="texto">Batata Frita</figcaption></button>
+                    </figure>
+                    <figure>
+                        <button id="close-image"><img src="../IMG/X-duplo.jpeg" alt="foto1" width="250" height="250">  
+                        <figcaption class="texto">X-duplo</figcaption></button>
+                    </figure>
+                    <figure>
+                        <button id="close-image"><img src="../IMG/batatinha.jpeg" alt="foto5" width="250" height="250"> 
+                        <figcaption class="texto">Batata Frita</figcaption></button>
+                    </figure>
+                    <figure>
+                        <button id="close-image"><img src="../IMG/X-duplo.jpeg" alt="foto1" width="250" height="250">  
+                        <figcaption class="texto">X-duplo</figcaption></button>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+  
+
+    <footer>
+         <!--Formulário-->
+         <form>
+            <!--Formas de pagamento-->
+            <div class="pagamento" id="contato">
+                <h3>Formas de pagamento</h3>
+                <img class="Boleto" src="../IMG/Boleto_Bancário.png" alt="Boleto" width="50" height="50">
+                <img class="Cartão" src="../IMG/Cartão_Crédito.png" alt="Cartão" width="50" height="50">
+                <img class="PIX" src="../IMG/PIX.png" alt="PIX" width="50" height="50">
+            </div>
+
+            <div class="global">
+                <!--Informações da empresa-->
+                <fieldset><legend><h3 class="titulo"> Entre em contato </h3></legend>
+                    <div class="empresa">
+                        <div class="email">
+                            <p>E-mail: jrlanches@gmail.com</p>
+                        </div>
+
+                        <div class="telefone">
+                            <p>Telefone: (88) 9 9999-9999</p>
+                        </div>
+
+                        <div class="endereco">
+                            <p>Endereço: Rua das Flores - 123</p>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!--Informações do cliente-->
+                <fieldset id="duvida"><legend><h3 class="titulo"> Tem alguma dúvida ou sugestão, conte-nos </h3></legend>
+                    <div class="cliente">
+
+                        <p>Seu e-mail:  <input type="text" name="tEmail" id="cEmail" size="30" maxlength="30" placeholder="nome@email.com"/></p>
+
+                        <p>Título: <input type="text" name="tTitulo" id="cTitulo" size="50" maxlength="50" placeholder="Título da mensagem."/></p>
+
+                        <p>Assunto: <textarea name="tAssunto" id="cAssunto" cols="47" rows="5" placeholder="Deixe aqui a sua mensagem, queremos te ouvir."></textarea></p>
+
+                        <p><input type="checkbox" name="tNov" id="cNov"/> Gostaria de receber todas as novidades.</p>
+                        <p><input type="checkbox" name="tPromo" id="cPromo"/> Gostaria de receber todas as promoções.</p>
+
+                        <input type="submit" name="tEnviar" value="Enviar"/>
+
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="nomeEmpresa">
+                <h3>JR Lanches</h3>
+            </div>
+
+        </form>
+
+        <!--JavaScript-->
+        <script>
+        var form = document.querySelector("form");
+
+        form.addEventListener("submit", function(evento){
+            //Evita a página atualizar
+            evento.preventDefault();
+
+            var validado = true;
+
+            //Verificar se os campos não forma preenchidos
+            for (var i = 0; i < this.elements.length; i++)
+            {
+                var item = this.elements[i];
+                if(item.type !== "submit"){
+                    if(item.value == ""){
+                        item.classList.add("erro");
+                        validado = false;
+                    }
+                    else{
+                        item.classList.remove("erro");
+                    }
+                }
+                
+            }
+            
+        })
+    </script>
+
+
+    </footer>
+
+</body>
+
+</html>
